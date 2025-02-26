@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     function functionName() {
-        alert(functionName.name); // Display function name
+        return functionName.name; // Return function name
     }
 
-    let button = document.getElementById("func");
-    if (button) {
-        button.addEventListener("click", functionName);
-    }
+    alert(functionName()); // Show function name on page load
 });
